@@ -3,14 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Assignment-02</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/tailwind.config.js">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<style>
+    :root{
+        --primary-bg:#1A0B2E;
+        --secondery-bg:#230E3D;
+
+        --primary-shadow:#504360;
+
+        --linear-gr-1:rgba(145, 0, 248, 1);
+        --linear-gr-2:rgba(251, 9, 180, 1);
+        --linear-gr-3:rgba(247, 233, 63, 1);
+    }
+</style>
+
+
 </head>
-<body class="inter-font">
-   
+<body class="inter-font ">
+      <header>
+        <nav class="navbar bg-(--primary-bg) flex justify-evenly p-9 items-center">
+            <h1 class="text-white font-bold text-4xl">Tech<span class="bg-[linear-gradient(190deg,var(--linear-gr-1),var(--linear-gr-2),var(--linear-gr-3))] bg-clip-text text-transparent">Wave</span></h1>
+
+            <input type="checkbox" id="resp-menu" class="resp-menu hidden">
+            <label for="resp-menu" class="hamburger hidden">
+                <img src="./assets/hamburger-menu.png" alt="">
+            </label>
+            
+            <ul class="nav-menu flex list-none gap-8 text-white font-medium text-base">
+                <li><a href="">About</a></li>
+                <li><a href="">Episodes</a></li>
+                <li><a href="">Host</a></li>
+            </ul>
+            <div class="nav-btn">
+                <button class="flex items-center justify-center gap-2 bg-[linear-gradient(200deg,var(--linear-gr-1),var(--linear-gr-2),var(--linear-gr-3))] rounded-3xl font-semibold text-base text-white px-4 py-3 cursor-pointer hover:px-[18px] hover:py-[14px] hover:rounded-full hover:shadow-[3px_-2px_15px_var(--primary-shadow)]">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </nav>
+      </header>
 </body>
 </html>
