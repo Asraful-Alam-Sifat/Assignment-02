@@ -22,11 +22,24 @@
     }
 
 
+    .btn-bg{
+       padding:0 auto;
+        padding-top: 3.5px;
+        height: 56px;
+        background-color: white;
+        /* overflow: hidden; */
+       border-radius: 50px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
 
 
 
 
-    
+
+
 @media screen and (max-width:576px) {
    
 
@@ -178,5 +191,15 @@
       grid-column: span 1/span 1 !important;
       width: 100%;
       box-sizing: border-box;
+    }
+
+
+    .next-ep{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+    .featured-epi{
+        flex-direction: column;
     }
 }
