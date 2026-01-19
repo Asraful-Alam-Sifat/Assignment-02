@@ -21,6 +21,12 @@
     display: none;
     }
 
+
+
+
+
+
+    
 @media screen and (max-width:576px) {
    
 
@@ -151,5 +157,26 @@
         margin:50px 20px;
         grid-template-columns: repeat(2,1fr);
         column-gap: 10px;
+    }
+
+    .features-container{
+        width:90%;
+       
+        margin:0 auto;
+        
+    }
+
+    .features{
+       display: grid;
+       grid-template-columns: 1fr !important;
+       grid-template-rows: auto!important;
+       width: 100%;
+       /* padding:20px; */
+      
+    }
+    .features-box{
+      grid-column: span 1/span 1 !important;
+      width: 100%;
+      box-sizing: border-box;
     }
 }
