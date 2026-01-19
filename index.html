@@ -54,7 +54,7 @@
                 
                 <li id="menu-btn">
                      <div class="nav-btn">
-                <button class="flex items-center justify-center gap-2 bg-[linear-gradient(200deg,var(--linear-gr-1),var(--linear-gr-2),var(--linear-gr-3))] rounded-3xl font-semibold text-base text-(--primary-text) px-4 py-3 cursor-pointer hover:px-[18px] hover:py-[14px] hover:rounded-full hover:shadow-[3px_-2px_15px_var(--primary-shadow)]">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="flex items-center justify-center gap-2 bg-[linear-gradient(200deg,var(--linear-gr-1),var(--linear-gr-2),var(--linear-gr-3))] rounded-3xl font-semibold text-base text-(--primary-text) px-4 py-3 cursor-pointer hover:px-[18px] hover:py-[14px] hover:rounded-full hover:shadow-[3px_-2px_15px_var(--primary-shadow)] transition-all duration-75 ease-in">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
             </div></li>
             </ul>
            
@@ -64,32 +64,43 @@
 
 
         <!-- banner section -->
-         <section class="techWave bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-cover bg-center py-[100px] ">
-            <div class="max-w-xl mx-auto ">
-               
-                <div class="flex justify-center items-center ">
-                    <h4 class="bg-(--color-custom-green) px-5 py-2 rounded-[30px] absolute z-[1] left-[947px] top-[230px] shadow-[0px_3px_27px_0px_rgba(0,_255,_136,_0.5)] font-semibold text-lg">NEW</h4>
-
-                    <img class="relative w-sm " src="./assets/hero-circle.png" alt="">
-                    <img class="absolute left-[800px] w-[150px]" src="./assets/microphone.png" alt="">
+         <section class="techWave relative ">
+             <div class=" absolute w-full">
+                    <img class="techWave-bg bg-no-repeat bg-cover bg-center w-full h-[800px] block" src="./assets/hero-bg.png" alt="">
                 </div>
-                <div class="mt-10  flex flex-col ">
-                    <h1 class="font-extrabold text-6xl text-(--primary-text) text-center mb-2">TechWave</h1>
+
+
+
+            <div class="banner-container  top-[24%] left-[34.3%] flex flex-col justify-center items-center max-w-[590px] mx-auto ">
+               
+                <div class="banner-img-container flex justify-center items-center mt-[100px]">
+                    <h4 class="badge-new flex justify-center items-center bg-(--color-custom-green) px-5 py-2 rounded-[30px] absolute z-[1] left-[960px] top-[120px] shadow-[0px_3px_27px_0px_rgba(0,_255,_136,_0.5)] font-semibold text-lg">NEW</h4>
+
+                    <img class="mic-bg relative w-[390px] " src="./assets/hero-circle.png" alt="">
+                    <img class="mic-png absolute left-[795px] w-[150px]" src="./assets/microphone.png" alt="">
+                </div>
+                <div class="banner-contant mt-10  flex flex-col ">
+                    <h1 class="font-extrabold text-6xl text-(--primary-text) text-center mb-2 z-[3]">TechWave</h1>
                     <p class="banner-text text-(--primary-text) font-normal text-base mb-7 opacity-80">Your daily dose of tech insights, productivity hacks, and personal growth</p>
 
-                    <div class="flex gap-2 justify-center items-center">
-                        <button class="bg-[linear-gradient(190deg,var(--linear-gr-1),var(--linear-gr-2),var(--linear-gr-3))] rounded-[50px] flex justify-center items-center  gap-2 px-8 py-4 text-(--primary-text) font-semibold text-base capitalize">
-                            <img class="w-9"  src="https://img.icons8.com/windows/32/FFFFFF/spotify.png" alt=""> Listen on Spotify</button>
+                    <div class="banner-btn flex gap-2 justify-center items-center z-[2]">
+                        <button class="banner-btn-one bg-[linear-gradient(190deg,var(--linear-gr-1),var(--linear-gr-2),var(--linear-gr-3))] rounded-[50px] flex justify-center items-center  gap-2 px-8 py-4 text-(--primary-text) font-semibold text-base capitalize cursor-pointer hover:py-[17px] hover:px-[33px] hover:border-y hover:rounded-full hover:shadow-[3px_-2px_15px_var(--primary-shadow)] transition-all duration-75 ease-in">
+                            <img class="spotify w-9"  src="https://img.icons8.com/windows/32/FFFFFF/spotify.png" alt=""> Listen on Spotify</button>
 
-                    <button class="flex justify-center items-center gap-2 border border-solid border-(--color-custom-green) rounded-[50px] px-8 py-5 text-(--color-custom-green) font-semibold text-base ">
+                    <button class="banner-btn-two flex justify-center items-center gap-2 border border-solid border-(--color-custom-green) rounded-[50px] px-8 py-5 text-(--color-custom-green) font-semibold text-base cursor-pointer hover:px-[33px]  hover:py-[21px] hover:rounded-full hover:shadow-[3px_-2px_15px_var(--primary-shadow)] hover:bg-[rgba(255,255,255,0)] hover:backdrop-blur transition-all duration-75 ease-in">
 
                         <img  src="./assets/message.png" alt=""> Subscribe</button>
-                    </div>
-
-                    
-                     
+                    </div>      
                 </div>
                
+            </div>
+         </section>
+
+         <section class="podcast">
+            <div class="podcast-container">
+                <div class="podcast-info">
+                    <h2>About the Podcast</h2>
+                </div>
             </div>
          </section>
 
