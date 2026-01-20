@@ -105,17 +105,17 @@
     }
 
     .mic-png{
-        width: 80px;
-        top:175px;
-        left:248px;
+        width: 60px;
+        top:145px;
+        left:70px;
     }
 
     .badge-new{
-        font-size: 1rem;
+        font-size: .8rem;
         width: 60px;
         text-align: center;
-        top:135px;
-        left:320px;
+        top:105px;
+        left:155px;
     }
 
     .banner-img-container{
