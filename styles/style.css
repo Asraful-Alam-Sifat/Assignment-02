@@ -27,12 +27,10 @@
         padding-top: 3.5px;
         height: 56px;
         background-color: white;
-        /* overflow: hidden; */
        border-radius: 50px ;
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
 
 
@@ -41,10 +39,7 @@
 
 
 @media screen and (max-width:576px) {
-   
-
     .navbar{
- 
         gap:250px;
     }
     .hamburger{
@@ -59,41 +54,43 @@
     .nav-menu{
         display: none;
         flex-direction: column-reverse;
+
         position: absolute;
         top: 110px;
         left:0;
+
         width: 90%;
         height:auto;
 
         color:var(--primary-text);
         background-color: var(--secondery-bg);
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
         z-index: 100;
         padding: 40px;
     }
+
     .nav-menu li:hover{
         border-bottom: 1px solid #4f4d4d;
     }
 
     .nav-links{
         flex-direction: column;
-      
     }
+
     #menu-btn:hover{
         border:none;
-       
     }
+
     .nav-btn{
         display: flex;
         justify-content: center;
- 
     }
+
     .nav-btn button:hover{
         box-shadow: 3px 2px 10px #595858;
-       
     }
   
-    
     .resp-menu:checked~ .nav-menu{
         display: flex;
     }
@@ -101,15 +98,18 @@
     .techWave-bg{
         height: 650px;
     }
+
     .mic-bg{
         width:200px;
         top:95px;
     }
+
     .mic-png{
         width: 80px;
         top:175px;
         left:248px;
     }
+
     .badge-new{
         font-size: 1rem;
         width: 60px;
@@ -117,55 +117,56 @@
         top:135px;
         left:320px;
     }
+
     .banner-img-container{
         margin-top: 40px;
     }
    
     .banner-container{
-       
         width:500px;
-
     }
+
     .banner-contant h1{
         font-size:2.5rem;
         margin-top:80px;
     }
+
     .banner-container p{
         font-size: 1rem;
         text-align: center;
     }
-    .banner-btn button{
-        
+
+    .banner-btn button{  
         margin: 0 auto;
         max-width:200px;
         padding: 12px 20px;
         font-size: 1rem;
          transition: padding .1s ease-out;
     }
+
     .banner-btn-one:hover{
-        padding:13px 20px;
-       
+        padding:13px 20px; 
     }
+
     .banner-btn-two:hover{
         padding:13px 20px;
-        
     }
+
     .spotify{
         width: 20px;
         height: 20px;
     }
+
     .podcast-info p{
-    
         padding:40px ;
-        line-height: 30px;
-     
-        
-        
+        line-height: 30px;      
     }
+
     .podcast-rulr{
         width: 90%;
         margin:0 auto;
     }
+
     .podcast-card{
         margin:50px 20px;
         grid-template-columns: repeat(2,1fr);
@@ -174,9 +175,7 @@
 
     .features-container{
         width:90%;
-       
         margin:0 auto;
-        
     }
 
     .features{
@@ -184,9 +183,8 @@
        grid-template-columns: 1fr !important;
        grid-template-rows: auto!important;
        width: 100%;
-       /* padding:20px; */
-      
     }
+
     .features-box{
       grid-column: span 1/span 1 !important;
       width: 100%;
@@ -199,6 +197,7 @@
         flex-direction: column;
         justify-self: center;
     }
+
     .featured-epi{
         flex-direction: column;
     }
@@ -213,16 +212,39 @@
     .host-img img{
         max-width: 200px;
     }
+
     .host-info h3{
         font-size: 24px;
         font-weight: 700;
         text-align: center;
     }
+
     .host-info p{
         text-align: center;
     }
+
     .host-links{
         margin: 0 auto;
     }
+    
+    footer{
+        width: 100%;
+        background-position:cover;
+    }
+    
+    footer h1,span{
+        font-size: 48px;
+    }
+     
+    .footer-links{
+        max-width: 255px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap:21px 0px;
+    }
+    .footer-sec{
+        padding:20px 0px;
+    }
+    
     
 }
