@@ -202,4 +202,27 @@
     .featured-epi{
         flex-direction: column;
     }
+
+    .host{
+        padding:0 20px;
+    }
+    .host-container{
+        flex-direction: column;
+    }
+    
+    .host-img img{
+        max-width: 200px;
+    }
+    .host-info h3{
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .host-info p{
+        text-align: center;
+    }
+    .host-links{
+        margin: 0 auto;
+    }
+    
 }
